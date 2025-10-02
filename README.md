@@ -69,30 +69,12 @@ This project is built as part of the **Frontend Developer Intern Assignment**. I
 - cd ../frontend
 - npm install
 - npm run dev
-
 - Frontend will run at: http://localhost:5173
 
 ## 4️⃣ Testing APIs with Postman
 
-Import the collection from /postman/assignment-collection.json into Postman
-
-Endpoints included:
-
-POST /api/auth/register → Register new user
-
-POST /api/auth/login → Login & get JWT token
-
-GET /api/auth/profile → Get user profile (requires token)
-
-GET /api/tasks → Fetch tasks
-
-POST /api/tasks → Add task
-
-PUT /api/tasks/:id → Update task
-
-DELETE /api/tasks/:id → Delete task
-
-Use Bearer Token in headers for protected routes.
+Import the collection from /postman/Frontend Intern Assignment.postman_collection.json into Postman
+<img width="897" height="335" alt="Image" src="https://github.com/user-attachments/assets/5fc832e8-45f5-4399-92c6-c4e0f5a7d4ae" />
 
 
 ## 📸 Logs & Screenshots
@@ -102,20 +84,15 @@ Check /logs folder for screenshots and API logs showing functionality.
 ## 📈 Scalability Notes
 
 Frontend:
-
-Modular React components
-
-Context API for auth (can scale to Redux/Next.js for large projects)
-
-Responsive UI ensures mobile-first scalability
+- Modular React components
+- Context API for auth (can scale to Redux/Next.js for large projects)
+- Responsive UI ensures mobile-first scalability
 
 Backend:
 
-MVC folder structure (controllers, models, routes, middleware)
-
-JWT middleware for secured routes
-
-Can scale with Docker, Nginx load balancing, and cloud deployment (AWS/Heroku/Vercel)
+- MVC folder structure (controllers, models, routes, middleware)
+- JWT middleware for secured routes
+- Can scale with Docker, Nginx load balancing, and cloud deployment (AWS/Heroku/Vercel)
 
 Database can be extended to Postgres/MySQL if needed
 
