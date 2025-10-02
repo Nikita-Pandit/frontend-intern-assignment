@@ -61,7 +61,7 @@ frontend-intern-assignment/
 git clone https://github.com/Nikita-Pandit/frontend-intern-assignment.git
 cd frontend-intern-assignment
 
-## 2️⃣ Backend Setup
+###  2️⃣ Backend Setup
 - cd backend
 - npm install
 # Create a .env file in backend/ with:
