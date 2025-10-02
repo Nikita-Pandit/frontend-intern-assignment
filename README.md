@@ -107,17 +107,9 @@ Database can be extended to Postgres/MySQL if needed
 
 ## 📧 Contact
 
--Author: Nikita Pandit
+- Author: Nikita Pandit
 - Email: nikitapandit651@gmail.com
 - GitHub: Nikita-Pandit
-
-## ✨ This project demonstrates a secure, scalable, and user-friendly full-stack web app as part of the Frontend Developer Intern assignment.
-
-
----
-
-✅ Just copy this into your `README.md` file and push it.  
-Would you like me to also create a **demo section with screenshots/GIFs** (like Register → Login → Dashboard → CRUD) in the README so that recruiters can see the UI without even running your project?
 
 
 
