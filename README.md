@@ -62,14 +62,14 @@ This project is built as part of the **Frontend Developer Intern Assignment**. I
 
 #### Run backend:
 - npm run dev
-- Backend will run at: http://localhost:5000
+- Backend will run at: http://localhost: port number
 
 ## 2️⃣ Frontend Setup
 
-- cd ../frontend
+- cd frontend
 - npm install
 - npm run dev
-- Frontend will run at: http://localhost:5173
+- Frontend will run at: http://localhost: port number
 
 ## 4️⃣ Testing APIs with Postman
 
@@ -99,21 +99,17 @@ Database can be extended to Postgres/MySQL if needed
 
 ## 🤝 How to Contribute
 
-Fork this repo
-
-Create a new branch (feature-x)
-
-Commit changes
-
-Push & submit PR
+- Fork this repo
+- Create a new branch (feature-x)
+- Commit changes
+- Push & submit PR
 
 
 ## 📧 Contact
 
-Author: Nikita Pandit
-Email: nikita@example.com
-
-GitHub: Nikita-Pandit
+-Author: Nikita Pandit
+- Email: nikitapandit651@gmail.com
+- GitHub: Nikita-Pandit
 
 ## ✨ This project demonstrates a secure, scalable, and user-friendly full-stack web app as part of the Frontend Developer Intern assignment.
 
