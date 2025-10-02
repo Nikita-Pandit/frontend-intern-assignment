@@ -42,15 +42,7 @@ This project is built as part of the **Frontend Developer Intern Assignment**. I
 ---
 
 ## 📂 Project Structure  
-frontend-intern-assignment/
-frontend-intern-assignment/
-├── backend/ # Node.js + Express backend
-├── frontend/ # React frontend
-├── postman/ # Postman collection (APIs)
-├── logs/ # Log files / screenshots
-└── README.md # Documentation
-
-
+<img width="976" height="237" alt="Image" src="https://github.com/user-attachments/assets/a69714f8-5ebd-49a5-b828-f8258e2c73d0" />
 
 ---
 
