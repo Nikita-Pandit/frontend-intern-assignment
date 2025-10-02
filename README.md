@@ -60,7 +60,7 @@ This project is built as part of the **Frontend Developer Intern Assignment**. I
 
 <img width="696" height="126" alt="Image" src="https://github.com/user-attachments/assets/791eaf84-f01a-42c1-ae98-773f626bff02" />
 
-# Run backend:
+#### Run backend:
 - npm run dev
 - Backend will run at: http://localhost:5000
 
