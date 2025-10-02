@@ -50,13 +50,13 @@ This project is built as part of the **Frontend Developer Intern Assignment**. I
 
 ### 1️⃣ Clone the Repository  
 
-git clone https://github.com/Nikita-Pandit/frontend-intern-assignment.git
-cd frontend-intern-assignment
+- git clone https://github.com/Nikita-Pandit/frontend-intern-assignment.git
+- cd frontend-intern-assignment
 
 ###  2️⃣ Backend Setup
 - cd backend
 - npm install
-# Create a .env file in backend/ with:
+- Create a .env file in backend/ with:
 
 <img width="696" height="126" alt="Image" src="https://github.com/user-attachments/assets/791eaf84-f01a-42c1-ae98-773f626bff02" />
 
@@ -66,11 +66,11 @@ cd frontend-intern-assignment
 
 ## 2️⃣ Frontend Setup
 
-cd ../frontend
-npm install
-npm run dev
+- cd ../frontend
+- npm install
+- npm run dev
 
-Frontend will run at: http://localhost:5173
+- Frontend will run at: http://localhost:5173
 
 ## 4️⃣ Testing APIs with Postman
 
