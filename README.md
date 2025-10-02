@@ -1,0 +1,158 @@
+# 🚀 Frontend Intern Assignment – Scalable Web App  
+
+This project is built as part of the **Frontend Developer Intern Assignment**. It is a full-stack web app with **React + Node.js/Express + MongoDB**, featuring **JWT authentication, protected dashboard, CRUD operations, and responsive UI**.  
+
+---
+
+## 🌟 Features  
+
+### 🔐 Authentication  
+- User **register / login / logout** with JWT  
+- Passwords securely stored with **bcrypt hashing**  
+- **Protected routes** (dashboard & tasks require login)  
+
+### 👤 User Dashboard  
+- Fetch & update **user profile**  
+- **CRUD operations** on tasks (create, read, update, delete)  
+- **Search & filter** tasks  
+- Responsive design with **TailwindCSS**  
+
+### ⚡ Backend APIs  
+- Lightweight Node.js + Express backend  
+- MongoDB database integration  
+- Secure routes with **JWT middleware**  
+- Error handling & validation  
+
+---
+
+## 🛠️ Tech Stack  
+
+**Frontend**  
+- React.js  
+- TailwindCSS  
+
+**Backend**  
+- Node.js + Express.js  
+- MongoDB (Mongoose ODM)  
+- JWT Authentication + bcrypt  
+
+**Other Tools**  
+- Postman (API Testing)  
+
+---
+
+## 📂 Project Structure  
+frontend-intern-assignment/
+frontend-intern-assignment/
+├── backend/ # Node.js + Express backend
+├── frontend/ # React frontend
+├── postman/ # Postman collection (APIs)
+├── logs/ # Log files / screenshots
+└── README.md # Documentation
+
+
+
+---
+
+## 🚀 Getting Started  
+
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/Nikita-Pandit/frontend-intern-assignment.git
+cd frontend-intern-assignment
+
+###  2️⃣ Backend Setup
+- cd backend
+- npm install
+# Create a .env file in backend/ with:
+
+<img width="696" height="126" alt="Image" src="https://github.com/user-attachments/assets/791eaf84-f01a-42c1-ae98-773f626bff02" />
+
+# Run backend:
+- npm run dev
+- Backend will run at: http://localhost:5000
+
+## 2️⃣ Frontend Setup
+
+cd ../frontend
+npm install
+npm run dev
+
+Frontend will run at: http://localhost:5173
+
+## 4️⃣ Testing APIs with Postman
+
+Import the collection from /postman/assignment-collection.json into Postman
+
+Endpoints included:
+
+POST /api/auth/register → Register new user
+
+POST /api/auth/login → Login & get JWT token
+
+GET /api/auth/profile → Get user profile (requires token)
+
+GET /api/tasks → Fetch tasks
+
+POST /api/tasks → Add task
+
+PUT /api/tasks/:id → Update task
+
+DELETE /api/tasks/:id → Delete task
+
+Use Bearer Token in headers for protected routes.
+
+
+## 📸 Logs & Screenshots
+
+Check /logs folder for screenshots and API logs showing functionality.
+
+## 📈 Scalability Notes
+
+Frontend:
+
+Modular React components
+
+Context API for auth (can scale to Redux/Next.js for large projects)
+
+Responsive UI ensures mobile-first scalability
+
+Backend:
+
+MVC folder structure (controllers, models, routes, middleware)
+
+JWT middleware for secured routes
+
+Can scale with Docker, Nginx load balancing, and cloud deployment (AWS/Heroku/Vercel)
+
+Database can be extended to Postgres/MySQL if needed
+
+
+## 🤝 How to Contribute
+
+Fork this repo
+
+Create a new branch (feature-x)
+
+Commit changes
+
+Push & submit PR
+
+
+## 📧 Contact
+
+Author: Nikita Pandit
+Email: nikita@example.com
+
+GitHub: Nikita-Pandit
+
+## ✨ This project demonstrates a secure, scalable, and user-friendly full-stack web app as part of the Frontend Developer Intern assignment.
+
+
+---
+
+✅ Just copy this into your `README.md` file and push it.  
+Would you like me to also create a **demo section with screenshots/GIFs** (like Register → Login → Dashboard → CRUD) in the README so that recruiters can see the UI without even running your project?
+
+
+
