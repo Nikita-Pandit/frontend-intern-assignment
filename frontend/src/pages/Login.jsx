@@ -4,23 +4,37 @@ import { useState, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import API from "../services/api";
 import { useNavigate, Link } from "react-router-dom";
+import { toast } from "react-toastify";   // ✅ Import Toastify
 
 export default function Login(){
   const { login } = useContext(AuthContext);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [err, setErr] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setErr("");
+   
     try {
       const { data } = await API.post("/auth/login", { email, password });
       login(data);
+       // ✅ Success toast
+            toast.success("Login Successful!", {
+              position: "top-right",
+              autoClose: 3000,
+            });
+      
       navigate("/dashboard");
     } catch (err) {
-      setErr(err.response?.data?.message || "Login failed");
+    const msg=  err.response?.data?.message || "Login failed"
+
+          
+      
+     
+            toast.error(msg, {
+              position: "top-right",
+              autoClose: 3000,
+            });
     }
   };
 
@@ -30,7 +44,7 @@ export default function Login(){
         <h2 className="text-2xl card-title mb-1">Welcome back 👋</h2>
         <p className="card-sub mb-6">Sign in to continue to your dashboard</p>
 
-        {err && <div className="p-3 bg-red-600/10 text-red-200 rounded mb-4">{err}</div>}
+      
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input aria-label="email" className="input" placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)} required />

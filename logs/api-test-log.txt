@@ -1,0 +1,125 @@
+
+# API Test Logs for Frontend Intern Assignment
+
+## 1. User Registration
+POST /api/auth/register
+Request:
+{
+  "name": "Nikita",
+  "email": "nikita@example.com",
+  "password": "123456"
+}
+Response:
+
+{
+    "token": <your token>, 
+    "user": {
+        "name": "Nikita",
+        "email": "nikita@example.com"
+    },
+    "message": "User registered successfully"
+}
+
+
+
+
+## 2. User Login
+POST /api/auth/login
+Request:
+{
+  "email": "nikita@example.com",
+  "password": "123456"
+}
+Response:
+{
+    "token": <your token>, 
+    "user": {
+        "name": "Nikita",
+        "email": "nikita@example.com"
+    },
+    "message": "Login successful"
+}
+
+
+
+
+
+## 3. Fetch Profile
+GET /api/auth/profile
+Headers:
+Authorization: Bearer <token>
+Response:
+{
+    "_id": "68de14689a248583d8d73dd8",
+    "name": "Nikita",
+    "email": "nikita@gmail.com",
+    "__v": 0
+}
+
+
+
+
+
+
+## 4. Create Task
+POST /api/tasks
+Request:
+{
+  "title": "Grocery Shopping",
+"description": "Bought essentials like milk, bread, and vegetables for the week.",
+  "completed":false
+}
+Headers:
+Authorization: Bearer <token>
+Response:
+
+{
+    "user": "68de14689a248583d8d73dd8",
+    "title": "Grocery Shopping",
+    "description": "Bought essentials like milk, bread, and vegetables for the week.",
+    "completed": false,
+    "_id": "68de5355c1b0a4b55cce948d",
+    "createdAt": "2025-10-02T10:26:29.866Z",
+    "updatedAt": "2025-10-02T10:26:29.866Z",
+    "__v": 0
+}
+
+
+
+
+
+## 5. Update Task
+PUT /api/tasks/task_id
+Request:
+{
+  "title": "Complete assignment (updated)",
+  "descriptio":"updated description of task"
+  "completed": true
+}
+Headers:
+Authorization: Bearer <token>
+
+
+{
+    "user": "68de14689a248583d8d73dd8",
+    "title":  "Complete assignment (updated)",
+    "description": "updated description of task"
+    "completed": true,
+    "_id": "68de5355c1b0a4b55cce948d",
+    "createdAt": "2025-10-02T10:26:29.866Z",
+    "updatedAt": "2025-10-02T10:26:29.866Z",
+    "__v": 0
+}
+
+
+
+
+
+## 6. Delete Task
+DELETE /api/tasks/task_id
+Headers:
+Authorization: Bearer <token>
+Response:
+{
+  "message": "Task removed"
+}

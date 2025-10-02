@@ -3,6 +3,8 @@ import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import API from "../services/api";
 import { AuthContext } from "../context/AuthContext";
+import { toast } from "react-toastify";   
+
 
 export default function Register() {
   const { login } = useContext(AuthContext);
@@ -39,15 +41,36 @@ export default function Register() {
     if (!validate()) return;
 
     try {
-      setSubmitting(true);
-      const { data } = await API.post("/auth/register", { name: name.trim(), email: email.trim(), password });
-      
+ 
+
+
+
+         setSubmitting(true);
+      const { data } = await API.post("/auth/register", {
+        name: name.trim(),
+        email: email.trim(),
+        password,
+      });
+
       login(data);
+
+      // ✅ Success toast
+      toast.success("User registered successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+
       navigate("/dashboard");
     } catch (err) {
       console.error(err);
       const msg = err.response?.data?.message || "Registration failed. Try again.";
       setError(msg);
+
+      // ✅ Error toast (optional)
+      toast.error(msg, {
+        position: "top-right",
+        autoClose: 3000,
+      });
     } finally {
       setSubmitting(false);
     }

@@ -8,7 +8,9 @@ export const createTask = async (req, res) => {
 
 export const getTasks = async (req, res) => {
   const tasks = await Task.find({ user: req.user._id });
+  //  const tasks = await Task.find();
   res.json(tasks);
+
 };
 
 export const updateTask = async (req, res) => {

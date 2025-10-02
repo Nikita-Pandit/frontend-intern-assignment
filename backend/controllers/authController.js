@@ -9,14 +9,14 @@ export const registerUser = async (req, res) => {
   const userExists = await User.findOne({ email });
   if (userExists) return res.status(400).json({ message: "User already exists" });
   const user = await User.create({ name, email, password });
-  res.status(201).json({ token: generateToken(user._id), user: { name: user.name, email: user.email } });
+  res.status(201).json({ token: generateToken(user._id), user: { name: user.name, email: user.email }, message:"User registered successfully" });
 };
 
 export const loginUser = async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email });
   if (user && await user.matchPassword(password)) {
-    res.json({ token: generateToken(user._id), user: { name: user.name, email: user.email } });
+    res.json({ token: generateToken(user._id), user: { name: user.name, email: user.email } , message:"Login successful"});
   } else {
     res.status(401).json({ message: "Invalid credentials" });
   }
