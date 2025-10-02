@@ -49,7 +49,7 @@ This project is built as part of the **Frontend Developer Intern Assignment**. I
 ## 🚀 Getting Started  
 
 ### 1️⃣ Clone the Repository  
-```bash
+
 git clone https://github.com/Nikita-Pandit/frontend-intern-assignment.git
 cd frontend-intern-assignment
 
